@@ -3,7 +3,7 @@ import Image from 'next/image'
 import TopMenuItem from './TopMenuItem';
 import { Link } from '@mui/material';
 import { getServerSession } from 'next-auth';
-import { authOptions } from '@/app/api/auth/[...nextauth]/route';
+import { authOptions } from '@/app/api/auth/[...nextauth]/authOptions';
 export default async function TopMenu (){
     const session = await getServerSession(authOptions)
     return (

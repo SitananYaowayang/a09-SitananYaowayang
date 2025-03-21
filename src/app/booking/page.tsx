@@ -2,7 +2,7 @@ import DateReserve from "@/components/DateReserve";
 import { MenuItem, Select, TextField } from "@mui/material";
 import getUserProfile from "@/libs/getUserProfile"
 import { getServerSession } from "next-auth";
-import { authOptions } from "../api/auth/[...nextauth]/route";
+import { authOptions } from "../api/auth/[...nextauth]/authOptions"; 
 export default async function bookings(){
 
     const session = await getServerSession(authOptions)
